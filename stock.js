@@ -25,7 +25,6 @@ function addLikes(stocks, who) {
 }
 
 function getData(stocks, like, comeFrom) {
-    console.log(like)
     if(Array.isArray(stocks)) {
         if(like) {
             return addLikes(stocks, comeFrom).then(_ => getMultipleStockData(stocks))
